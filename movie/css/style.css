@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  html {
+    font-size: 62.5%; } }
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  html {
+    font-size: 72.5%; } }
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 87.5%; } }
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative; }
+
+header {
+  width: 100%;
+  height: 44px;
+  background: #000; }
+  header h1 {
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    font-size: 1.6rem; }
+  header a {
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.4rem; }
+    header a:first-child {
+      left: 10px;
+      top: 12px;
+      background: url(../img/head1.png) no-repeat left center;
+      padding-left: 12px;
+      background-size: 8px 15px; }
+    header a:last-child {
+      right: 10px;
+      top: 20px;
+      width: 20px;
+      height: 4px;
+      background: url(../img/head2.png) no-repeat;
+      background-size: 100% 100%;
+      color: transparent; }
+
+.top {
+  width: 100%;
+  height: 40px;
+  position: relative; }
+  .top .city {
+    width: 65px;
+    float: left;
+    margin: 12px 0 0 2px;
+    color: #676767; }
+    .top .city p {
+      font-size: 16px;
+      margin-left: 8px; }
+  .top .down {
+    position: absolute;
+    left: 43px;
+    top: 10px; }
+    .top .down:after {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #BABABA;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+      vertical-align: middle;
+      margin: 0 4px; }
+  .top input {
+    width: 55%;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #DADADA;
+    border-radius: 8px;
+    background: url(../img/search.png) no-repeat left center;
+    background-size: 12px 13px;
+    padding-left: 15px; }
+  .top .screen {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 6px; }
+    .top .screen span {
+      font-size: 16px;
+      background: url(../img/screen.png) no-repeat left center;
+      background-size: 10px 17px;
+      padding-left: 14px;
+      color: #666666; }
+
+.banner {
+  width: 100%;
+  height: 80px; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
+
+section {
+  -webkit-box-flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  section .scroll {
+    position: absolute;
+    overflow: hidden;
+    width: 100%; }
+    section .scroll .item {
+      width: 100%;
+      height: 80px;
+      border-bottom: 1px solid #E9E9E9;
+      line-height: 22px;
+      padding-left: 8px; }
+      section .scroll .item h3 {
+        font-size: 16px;
+        padding-top: 10px; }
+      section .scroll .item .addr {
+        color: #979797;
+        width: 100%;
+        position: relative; }
+        section .scroll .item .addr span {
+          position: absolute;
+          right: 20px;
+          top: 0; }
+      section .scroll .item .instr span {
+        border: 1px solid #979797;
+        padding: 2px; }
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #F7F7F7;
+  border-top: 1px solid #D5D5D5; }
+  footer a {
+    width: 20%;
+    text-decoration: none;
+    color: #A7A7A7;
+    float: left;
+    text-align: center;
+    margin-top: 6px; }
+    footer a img {
+      width: 20px;
+      height: 20px; }
+
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.choice {
+  display: none;
+  width: 100%;
+  height: 350px;
+  backgroud: #fff;
+  position: absolute;
+  left: 0;
+  top: 84px; }
+  .choice .title {
+    width: 100px;
+    height: 100%;
+    background: #F5F5F5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9; }
+    .choice .title li {
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+      color: #666666;
+      line-height: 40px;
+      text-align: center;
+      list-style: none; }
+    .choice .title .on {
+      color: #37CF77;
+      background: #fff; }
+  .choice .cont {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    padding-left: 120px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: #6A6A6A; }
+    .choice .cont .content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      overflow: auto;
+      display: none; }
+      .choice .cont .content li {
+        list-style: none;
+        line-height: 35px; }
+    .choice .cont .region {
+      display: block; }
+
+/*# sourceMappingURL=style.css.map */
